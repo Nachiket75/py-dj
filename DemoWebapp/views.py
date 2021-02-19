@@ -3,4 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 def courses(request):
-    return  HttpResponse('<h1>This is my Home page</h1')
+    #return  HttpResponse('<h1>This is my Home page</h1')
+    return  render(request,'home.html', {'name':'Nachiket'})
