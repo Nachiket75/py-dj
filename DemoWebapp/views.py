@@ -7,7 +7,7 @@ def home(request):
     return  render(request,'home.html', {'name':'Nachiket'})
 
 def add(request):
-    no1=int( request.GET['num1'])
-    no2=int( request.GET['num2'])
+    no1=int( request.POST['num1'])
+    no2=int( request.POST['num2'])
     result = no1+no2
     return render(request, 'result.html',{'result':result})
