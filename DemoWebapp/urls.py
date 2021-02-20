@@ -3,7 +3,8 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('', views.courses, name="homepage")
+    path('', views.home, name="homepage"),
+    path('add',views.add,name= "Add")
 ]
 
 
